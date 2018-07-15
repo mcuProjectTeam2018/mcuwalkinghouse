@@ -8,29 +8,31 @@
 
     <EditText
         android:id="@+id/regstu_name"
-        android:layout_width="390dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="請輸入您的真實姓名"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/regstu_id"
-        android:layout_width="390dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
         android:ems="10"
         android:hint="請輸入您的學號"
         android:inputType="number"
         android:singleLine="true"
-        app:layout_constraintTop_toBottomOf="@+id/regstu_name"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regstu_name" />
 
     <EditText
         android:id="@+id/regstu_phone"
-        android:layout_width="390dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -39,13 +41,14 @@
         android:inputType="phone"
         android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/regstu_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/regstu_id"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/regstu_password"
-        android:layout_width="390dp"
+        android:layout_width="0dp"
         android:layout_height="78dp"
         android:layout_marginBottom="116dp"
         android:ems="10"
@@ -53,8 +56,9 @@
         android:inputType="textPassword"
         android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/btn_regstu"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_regstu"
@@ -66,12 +70,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="gotomain_stu"
         android:text="完成註冊"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-        <!--tools:layout_editor_absoluteY="348dp" -->
+    <!--tools:layout_editor_absoluteY="348dp" -->
 
 </android.support.constraint.ConstraintLayout>

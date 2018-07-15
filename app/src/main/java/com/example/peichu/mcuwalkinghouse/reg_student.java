@@ -1,7 +1,9 @@
 package com.example.peichu.mcuwalkinghouse;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class reg_student extends AppCompatActivity {
 
@@ -12,4 +14,10 @@ public class reg_student extends AppCompatActivity {
 
     }
 
-}
+    public void gotomain_stu(View v){
+        Intent it=new Intent(this,MainActivity.class);
+        startActivity(it);
+    }
+    }
+
+

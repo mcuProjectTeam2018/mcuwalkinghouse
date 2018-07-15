@@ -2,309 +2,144 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".only_ld_upload">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".only_ld_upload"
+    tools:layout_editor_absoluteY="25dp">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="60dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="150dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="出租地址:"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="597dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="141dp"
-        android:layout_marginTop="26dp"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton10"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
         android:text="類型:"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.421" />
-
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="66dp"
-        android:layout_height="34dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="雅房"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-        app:layout_constraintStart_toEndOf="@+id/textView11" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="0dp"
-        android:layout_height="34dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginStart="37dp"
-        android:text="套房"
-        app:layout_constraintBaseline_toBaselineOf="@+id/radioButton"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton4"
-        app:layout_constraintStart_toStartOf="@+id/editText" />
+        app:layout_constraintBottom_toBottomOf="@+id/group_1"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="8dp"
         android:text="格局:"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="80dp"
-        android:layout_height="33dp"
-        android:text="樓中樓"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton4"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
-
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="77dp"
-        android:layout_height="31dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
-        android:text="有陽台"
-        app:layout_constraintBaseline_toBaselineOf="@+id/radioButton3"
-        app:layout_constraintStart_toStartOf="@+id/editText" />
-
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="78dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="對外窗"
-        app:layout_constraintBaseline_toBaselineOf="@+id/radioButton4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/radioButton4" />
+        app:layout_constraintEnd_toStartOf="@+id/group2"
+        app:layout_constraintTop_toBottomOf="@+id/group_1" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="6dp"
         android:text="坪數:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="55dp"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/editText3"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="19dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
         android:text="坪"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:text="租金"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+        android:layout_marginTop="12dp"
+        android:text="租金:"
+        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintTop_toBottomOf="@+id/group4" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="55dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginStart="32dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toTopOf="@+id/textView15" />
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
         android:text="元/月"
-        app:layout_constraintStart_toEndOf="@+id/radioButton4"
-        app:layout_constraintTop_toTopOf="@+id/editText3" />
+        app:layout_constraintStart_toEndOf="@+id/editText8"
+        app:layout_constraintTop_toTopOf="@+id/editText8" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="11dp"
         android:text="屋況:"
-        app:layout_constraintBottom_toTopOf="@+id/textView18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="電梯大樓"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="4dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:text="公寓"
-        app:layout_constraintStart_toEndOf="@+id/radioButton6"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintEnd_toStartOf="@+id/group4"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="性別:"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton9"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <RadioButton
-        android:id="@+id/radioButton9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="335dp"
-        android:text="男"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <RadioButton
-        android:id="@+id/radioButton10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="335dp"
-        android:text="女"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioButton9"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <RadioButton
-        android:id="@+id/radioButton11"
-        android:layout_width="64dp"
-        android:layout_height="31dp"
-        android:text="不限"
-        app:layout_constraintBaseline_toBaselineOf="@+id/radioButton10"
-        app:layout_constraintStart_toEndOf="@+id/radioButton10" />
+        app:layout_constraintBottom_toBottomOf="@+id/group4"
+        app:layout_constraintEnd_toStartOf="@+id/group4" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
         android:text="設備:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="184dp"
+        android:layout_marginTop="184dp"
         android:text="租金含:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/checkBox11"
+        app:layout_constraintTop_toTopOf="@+id/group4" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:text="自付:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox20" />
 
@@ -313,28 +148,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="可開伙"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
+        app:layout_constraintStart_toStartOf="@+id/textView19" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="1dp"
-        android:layout_marginStart="1dp"
         android:text="床"
-        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox4"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox9"
         app:layout_constraintStart_toEndOf="@+id/checkBox2" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
         android:text="桌子"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox9"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox5" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3" />
 
     <CheckBox
         android:id="@+id/checkBox5"
@@ -342,30 +173,25 @@
         android:layout_height="wrap_content"
         android:text="衣櫃"
         app:layout_constraintBaseline_toBaselineOf="@+id/checkBox6"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox6" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox14"
+        app:layout_constraintStart_toStartOf="@+id/checkBox14" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginTop="25dp"
         android:text="電視"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox13"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox7"
-        app:layout_constraintStart_toStartOf="@+id/textView16" />
+        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:text="冷氣"
         app:layout_constraintBaseline_toBaselineOf="@+id/checkBox6"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/checkBox6" />
 
     <CheckBox
         android:id="@+id/checkBox8"
@@ -379,9 +205,10 @@
         android:id="@+id/checkBox9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="洗衣機"
-        app:layout_constraintStart_toEndOf="@+id/checkBox8"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintStart_toEndOf="@+id/checkBox8" />
 
     <CheckBox
         android:id="@+id/checkBox10"
@@ -411,44 +238,40 @@
         android:id="@+id/checkBox13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:text="滅火器"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox7"
-        app:layout_constraintTop_toTopOf="@+id/checkBox14" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox14"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="飲水機"
-        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox10"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox6"
-        app:layout_constraintStart_toStartOf="@+id/checkBox6" />
+        app:layout_constraintStart_toEndOf="@+id/checkBox10"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
     <CheckBox
         android:id="@+id/checkBox15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="水"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox16"
+        app:layout_constraintStart_toStartOf="@+id/textView20" />
 
     <CheckBox
         android:id="@+id/checkBox16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="電"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox20"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox11"
-        app:layout_constraintStart_toEndOf="@+id/checkBox11" />
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <CheckBox
         android:id="@+id/checkBox17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="網路"
         app:layout_constraintBaseline_toBaselineOf="@+id/checkBox16"
         app:layout_constraintStart_toEndOf="@+id/checkBox16" />
@@ -457,60 +280,59 @@
         android:id="@+id/checkBox18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="第四台"
-        app:layout_constraintStart_toEndOf="@+id/checkBox17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/checkBox17" />
 
     <CheckBox
         android:id="@+id/checkBox19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
         android:text="管理費"
         app:layout_constraintBaseline_toBaselineOf="@+id/checkBox18"
-        app:layout_constraintStart_toEndOf="@+id/checkBox18" />
+        app:layout_constraintStart_toStartOf="@+id/checkBox18" />
 
     <CheckBox
         android:id="@+id/checkBox20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:text="其他"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="其他:"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/checkBox15" />
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="80dp"
-        android:layout_height="0dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="111dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginStart="14dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/checkBox20"
-        app:layout_constraintStart_toEndOf="@+id/checkBox20"
-        app:layout_constraintTop_toTopOf="@+id/checkBox20" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox18"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox16"
+        app:layout_constraintTop_toTopOf="@+id/checkBox20"
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="水"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox21"
+        app:layout_constraintStart_toStartOf="@+id/textView21" />
 
     <CheckBox
         android:id="@+id/checkBox21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="電"
         app:layout_constraintBottom_toTopOf="@+id/checkBox24"
         app:layout_constraintStart_toEndOf="@+id/checkBox" />
@@ -519,8 +341,6 @@
         android:id="@+id/checkBox22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="網路"
         app:layout_constraintBaseline_toBaselineOf="@+id/checkBox21"
         app:layout_constraintStart_toEndOf="@+id/checkBox21" />
@@ -529,82 +349,234 @@
         android:id="@+id/checkBox23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:text="第四台"
-        app:layout_constraintStart_toEndOf="@+id/checkBox22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/checkBox22" />
 
     <EditText
         android:id="@+id/editText5"
         android:layout_width="47dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/textView22"
-        app:layout_constraintStart_toEndOf="@+id/checkBox23"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toEndOf="@+id/editText8"
         app:layout_constraintTop_toTopOf="@+id/checkBox23" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="27dp"
         android:layout_height="25dp"
-        android:layout_marginBottom="27dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginBottom="108dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="109dp"
         android:text="元"
-        app:layout_constraintBottom_toBottomOf="@+id/textView25"
-        app:layout_constraintStart_toEndOf="@+id/editText5"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/checkBox23"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
 
     <CheckBox
         android:id="@+id/checkBox24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginTop="83dp"
         android:text="管理費"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/checkBox20" />
 
     <EditText
         android:id="@+id/editText6"
         android:layout_width="65dp"
-        android:layout_height="21dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/checkBox24"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="15dp"
         android:layout_height="16dp"
         android:layout_marginBottom="42dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="43dp"
         android:text="元"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText6"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox23"
+        app:layout_constraintStart_toStartOf="@+id/editText6"
         app:layout_constraintTop_toTopOf="@+id/checkBox22" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="75dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:onClick="gotopicture"
         android:text="下一步"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/group_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="套房"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="雅房"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="53dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/group2"
+        android:layout_width="252dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="對外窗"
+            tools:layout_editor_absoluteX="216dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="樓中樓"
+            tools:layout_editor_absoluteX="48dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="有陽台"
+            tools:layout_editor_absoluteX="128dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/group4"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/group2">
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="電梯大樓"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="公寓"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="169dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="男"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="女"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="64dp"
+            android:layout_height="31dp"
+            android:layout_weight="1"
+            android:text="不限"
+            tools:layout_editor_absoluteX="272dp"
+            tools:layout_editor_absoluteY="201dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox18"
+        app:layout_constraintStart_toStartOf="@+id/checkBox4"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
 
 </android.support.constraint.ConstraintLayout>

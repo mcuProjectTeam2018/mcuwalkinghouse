@@ -20,7 +20,7 @@ public class Find_house extends AppCompatActivity {
         switch(v.getId())//讀取按鈕的id來做不同相關處理 // v等同於第一行的v
         {
             case R.id.btn_gps:
-                it.setData(Uri.parse("geo:25.08722,121.52694"));
+                it.setData(Uri.parse("geo:桃園市德明路158號713室"));
                 break;
 
 

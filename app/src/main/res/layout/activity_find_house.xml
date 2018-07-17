@@ -8,51 +8,76 @@
     tools:layout_editor_absoluteY="25dp">
 
     <Button
-        android:id="@+id/search"
-        android:layout_width="24dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginLeft="281dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginStart="281dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/search"
-        app:layout_constraintEnd_toStartOf="@+id/up"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/map"
-        android:layout_width="28dp"
-        android:layout_height="29dp"
+        android:id="@+id/btn_search"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_gps"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
+        android:id="@+id/btn_gps"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="13dp"
         android:background="@drawable/map"
-        app:layout_constraintBaseline_toBaselineOf="@+id/up"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/down" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
 
     <Button
-        android:id="@+id/up"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
+        android:id="@+id/btn_up"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/up"
-        app:layout_constraintBottom_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/search"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/down"
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:id="@+id/btn_down"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/down"
-        app:layout_constraintBaseline_toBaselineOf="@+id/up"
-        app:layout_constraintEnd_toStartOf="@+id/map"
-        app:layout_constraintStart_toEndOf="@+id/search" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

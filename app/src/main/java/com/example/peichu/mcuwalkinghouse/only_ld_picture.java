@@ -3,6 +3,7 @@ package com.example.peichu.mcuwalkinghouse;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,32 +15,44 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class only_ld_picture extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_only_ld_picture);
     }
-    public void onget(View v){
-        Intent it;
-        it = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);//建立動作為拍照
-        startActivityForResult(it,100);//100為拍照
-    }
+   
 protected void onActivityResult(int requestCode,int resultCode,Intent data)
 {
     super.onActivityResult(requestCode,resultCode,data);
-    if(resultCode== Activity.RESULT_OK&& resultCode==100)//有拍到照片時
+    if(resultCode== Activity.RESULT_OK)//要求的intent成功了
     {
-        Bundle bd1=data.getExtras();//將Intent的附加資料轉為bundle物件
-        Bitmap bmp=(Bitmap)bd1.get("data");//由bundle取出名為data的Bitmap資料
-        ImageView imv=(ImageView) findViewById(R.id.photo1);
-        imv.setImageBitmap(bmp);
+        switch (requestCode)
+        {
+            case 100://拍照
+
+                Intent it=new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,imgUri);
+                sendBroadcast(it);
+                break;
+            case 101://選取照片
+                imgUri=data.getData();
+                
+                break;
+                }
+        showImg();
 
     }
     else//沒有拍到照片時
         {
-        Toast.makeText(this,"沒有拍到照片",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,requestCode==100?"沒有拍到照片":"沒有選取照片",Toast.LENGTH_LONG).show();
     }
 
 
 }
+
+    public void onpick(View v){
+        Intent it = new Intent(Intent.ACTION_GET_CONTENT);//建立動作為選取內容
+        it.setType("image/*");
+        startActivityForResult(it,101);//101為選取照片
+    }
 }

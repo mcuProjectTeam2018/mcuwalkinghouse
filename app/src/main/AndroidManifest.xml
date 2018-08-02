@@ -21,20 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Login"
-            android:label="@string/title_activity_login" />
         <activity android:name=".Register" />
-        <activity android:name=".reg_student" />
-        <activity android:name=".reg_landlord" />
-        <activity android:name=".Find_house" />
         <activity android:name=".item" />
-        <activity android:name=".Only_landlord" />
         <activity android:name=".only_ld_manage" />
         <activity
             android:name=".only_ld_upload"
             android:label="@string/title_activity_only_ld_upload" />
-        <activity android:name=".only_ld_picture"></activity>
+        <activity android:name=".only_ld_picture" />
+        <activity android:name=".Menu1" />
+        <activity android:name=".Details" />
+        <activity android:name=".Favorite" />
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>

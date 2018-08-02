@@ -7,81 +7,140 @@
     tools:context=".Register"
     tools:layout_editor_absoluteY="25dp">
 
-    <Button
-        android:id="@+id/cho_stu"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="26dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginRight="57dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="245dp"
-        android:onClick="gotoreg_stu"
-        android:text="學生"
-        app:layout_constraintBottom_toTopOf="@+id/cho_have"
-        app:layout_constraintEnd_toStartOf="@+id/cho_landlord"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/regstu_name"
+        android:layout_width="384dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="請輸入您的真實姓名"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteY="8dp" />
 
-    <TextView
-        android:id="@+id/cho_have"
+    <EditText
+        android:id="@+id/regstu_phone"
+        android:layout_width="384dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="請輸入您的手機號碼"
+        android:inputType="phone"
+        android:singleLine="true"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <EditText
+        android:id="@+id/regstu_password"
+        android:layout_width="384dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:hint="請輸入密碼(8位)"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <Button
+        android:id="@+id/btn_regstu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="231dp"
-        android:layout_marginLeft="147dp"
-        android:layout_marginStart="147dp"
-        android:text="已有帳號?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cho_login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cho_stu"
-        tools:ignore="MissingConstraints" />
+        android:onClick="gotomain_stu"
+        android:text="完成註冊"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="451dp" />
 
-    <Button
-        android:id="@+id/cho_landlord"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="38dp"
-        android:layout_marginTop="245dp"
-        android:onClick="gotoreg_land"
-        android:text="房東"
-        app:layout_constraintBottom_toTopOf="@+id/cho_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cho_stu"
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="37dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="272dp"
+        android:text="性別:"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteX="0dp" />
 
-    <Button
-        android:id="@+id/cho_login"
-        android:layout_width="58dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="224dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginRight="119dp"
-        android:onClick="reg_login"
-        android:text="登入"
+    <TextView
+        android:id="@+id/identity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="352dp"
+        android:layout_marginRight="352dp"
+        android:layout_marginTop="8dp"
+        android:text="身份:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cho_have"
-        app:layout_constraintTop_toBottomOf="@+id/cho_landlord"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/gender"
+        app:layout_constraintVertical_bias="0.165" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="69dp"
-        android:layout_height="41dp"
+    <RadioGroup
+        android:layout_width="93dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:onClick="gobackmain"
-        android:text="回首頁"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gender"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/gender_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="男"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <RadioButton
+            android:id="@+id/gender_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="女"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="267dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614">
+
+        <RadioButton
+            android:id="@+id/ide_stu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="學生"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="327dp" />
+
+        <RadioButton
+            android:id="@+id/ide_landlord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="房東"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="327dp" />
+    </RadioGroup>
+
+    <!--tools:layout_editor_absoluteY="348dp" -->
+
 </android.support.constraint.ConstraintLayout>

@@ -5,15 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class reg_landlord extends AppCompatActivity {
+public class Details extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reg_landlord);
+        setContentView(R.layout.activity_details);
     }
-    public void gotoitem(View v){
-        Intent it=new Intent(this,item.class);
+    public void gotofavorite(View v){
+        Intent it=new Intent(this,Favorite.class);
         startActivity(it);
     }
 }
